@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "debug": "ts-node-dev --inspect=9229 --transpile-only ./src/server.ts",
     "dev": "ts-node-dev --inspect  --ignore-watch node_modules src/server.ts",
     "start": "pm2 start dist/server.js -i 2",
     "monit": "pm2 monit dist/server.js",
